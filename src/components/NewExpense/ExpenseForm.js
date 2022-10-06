@@ -3,15 +3,15 @@ import { useState } from 'react'
 
 const ExpenseForm = () => {
 
-    const [enterTitle, setEnteredTitle] = useState('')
+    const [enteredTitle, setEnteredTitle] = useState('')
     const titleChangeHandler = (event) =>{
         setEnteredTitle(event.target.value)
     }
-    const [enterAmount, setEnteredAmount] = useState('')
+    const [enteredAmount, setEnteredAmount] = useState('')
     const amountChangeHandler =(event) => {
         setEnteredAmount(event.target.value)
     }
-    const [enterDate, setEnteredDate] = useState('')
+    const [enteredDate, setEnteredDate] = useState('')
     const dateChangeHandler = (event) => {
         setEnteredDate(event.target.value)
     }
