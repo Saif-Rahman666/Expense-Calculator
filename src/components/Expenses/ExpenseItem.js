@@ -2,6 +2,7 @@ import  './ExpenseItem.css'
 import ExpenseDate from './ExpenseDate'
 import Card from '../UI/Card'
 import {useState} from 'react'
+import ExpensesFilter from './ExpensesFilter'
 
 function ExpenseItem(props){
 
@@ -11,7 +12,10 @@ function ExpenseItem(props){
        console.log(title)
    }
     return (
+        <div>
+            
         <Card className='expense-item'>
+        <ExpensesFilter/>
             <ExpenseDate date={props.date}></ExpenseDate>
             <div className='expense-item__description'>
                 <h2>
@@ -25,6 +29,7 @@ function ExpenseItem(props){
             </div>
             
         </Card>
+        </div>
     )
 }
 export default ExpenseItem
