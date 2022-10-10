@@ -12,7 +12,8 @@ function ExpenseItem(props){
        console.log(title)
    }
     return (
-        <div>
+       <li>
+      
             
         <Card className='expense-item'>
             
@@ -29,7 +30,8 @@ function ExpenseItem(props){
             </div>
             
         </Card>
-        </div>
+       
+        </li>
     )
 }
 export default ExpenseItem
